@@ -19,7 +19,12 @@
 
   @media (max-width: 770px) {
     display: none;
-    background: linear-gradient(90deg, rgba(246, 169, 204, 1) 0%, rgba(255, 202, 141, 1) 50%, rgba(252, 121, 142, 1) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(246, 169, 204, 1) 0%,
+      rgba(255, 202, 141, 1) 50%,
+      rgba(252, 121, 142, 1) 100%
+    );
     position: fixed;
     top: 0;
     left: 0;
@@ -27,7 +32,12 @@
     height: 100vh;
     min-width: 35vw;
     z-index: 10;
+    flex-direction: column;
   }
+}
+
+.sidebarActive {
+  @apply block;
 }
 
 .link {
@@ -38,7 +48,8 @@
   }
 }
 
-.link:hover, .dropdown:hover {
+.link:hover,
+.dropdown:hover {
   text-decoration: underline wavy;
 }
 
@@ -65,7 +76,6 @@
 }
 
 .overlayActive {
-  @apply h-[100vh] w-[100vw] fixed top-0 left-0;
+  @apply h-[100vh] w-[100vw] fixed top-0 left-0 bg-black bg-opacity-60;
   z-index: 5;
-  background-color: rgba(0, 0, 0, 0.6);
 }
