@@ -1,6 +1,6 @@
 import styles from "./Card.module.css";
 
-export default function Card(props: any) {
+export default function Card(props: {title: string, content: string, tags: string[]}) {
   return (
     <div className={styles.card}>
       <div className={styles.title}>{props.title}</div>
