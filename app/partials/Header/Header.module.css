@@ -1,5 +1,5 @@
 .animeBackground {
-  background-image: url('@/public/anime-sunset.webp');
+  background-image: url('/anime-sunset.webp');
   background-size: cover;
   background-position: center;
   height: 95vh;
