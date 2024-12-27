@@ -1,0 +1,21 @@
+.footer {
+  @apply bg-[#333026] px-[8vw] pt-[8vh] pb-[4vh] text-white;
+}
+
+.conclusionLine {
+  @apply text-xl font-['Montserrat'] border-b-2 pb-5 text-center;
+}
+
+.socialLinks {
+  @apply flex justify-center mt-8 text-2xl;
+  width: 100%;
+}
+
+.socialLink {
+  @apply flex items-center justify-center mx-3 transition-all p-2 bg-gray-600 w-12 h-12 rounded-3xl;
+}
+
+.socialLink:hover {
+  @apply bg-gray-500;
+  transform: scale(1.2);
+}

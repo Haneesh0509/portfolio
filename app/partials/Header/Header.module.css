@@ -1,0 +1,45 @@
+.animeBackground {
+  background-image: url('@/public/anime-sunset.webp');
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  position: relative;
+}
+
+.name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30vh;
+  top: 23vh;
+  right: 8vw;
+  @media (max-width: 768px) {
+    font-size: 15vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: unset;
+  }
+}
+
+.haneesh-text {
+  font-size: inherit;
+}
+
+.im {
+  @apply absolute rounded-3xl rotate-[-20deg] border-8 p-3 text-3xl inline-block;
+  left: calc(-5vw - 5%);
+
+  @media (max-width: 768px) {
+    left: calc(-10vw - 2%);
+    font-size: 5vh;
+    padding: 5px 5px;
+    border-width: 5px;
+  }
+
+  @media (max-width: 486px) {
+    left: calc(-15vw - 2%);
+  }
+  
+  @media (max-width: 400px) {
+    left: calc(-20vw - 2%);
+  }
+}

@@ -1,0 +1,65 @@
+.profilePicture {
+  @apply border-4 border-techBlue transition-all select-none;
+  -webkit-user-drag: none;
+  border-radius: 50%;
+}
+
+.profilePicture:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  @apply flex items-center justify-between;
+}
+
+.tooltip {
+  @apply absolute top-[-3rem] right-[2.4rem] bg-gray-700 text-white px-3 py-1 rounded-lg hidden transition-all;
+
+  @media (max-width: 768px) {
+    padding: 0.25rem 0.5rem;
+    right: 1rem;
+  }
+}
+
+.tooltip::after {
+  content: '';
+  @apply absolute bottom-[-0.4rem] left-[50%] translate-x-[-50%] w-3 h-3 bg-gray-700;
+  transform: rotate(45deg);
+
+  @media (max-width: 768px) {
+    width: 0.5rem;
+    height: 0.5rem;
+    bottom: -0.3rem;
+  }
+}
+
+.nameContainer {
+  @apply bg-natureGreen inline-block px-4 py-2 text-white text-2xl font-['Poppins'] rounded-3xl my-4 font-bold transition-transform select-none;
+}
+
+.nameContainer:hover {
+  @apply italic;
+  transform: scale(1.2);
+}
+
+.description {
+  @apply bg-vibrantPink text-white px-5 py-2 text-xl rounded-xl font-['Ubuntu'];
+}
+
+.aboutList {
+  @apply text-lg list-none;
+}
+
+.aboutList li {
+  @apply font-['Montserrat'] flex my-2;
+}
+
+.aboutList li::before {
+  content: "→";
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.aboutList li span {
+  @apply ml-4;
+}

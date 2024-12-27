@@ -1,0 +1,12 @@
+.section {
+  @apply pt-[10vh] px-[5vw];
+}
+
+.sectionTitle {
+  @apply text-5xl font-bold;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.sectionContent {
+  @apply mx-3 mt-12 pb-8;
+}

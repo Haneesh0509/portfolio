@@ -1,0 +1,71 @@
+.navbar {
+  @apply flex justify-between py-2 fixed w-[100vw];
+}
+
+.branding {
+  @apply ml-3 px-5 py-3 font-bold text-3xl font-['Montserrat'] rounded-2xl transition-all flex items-center;
+
+  @media (max-width: 770px) {
+    margin-left: 4rem;
+  }
+}
+
+.branding:hover {
+  background-color: rgba(120, 120, 120, 0.3);
+}
+
+.links {
+  @apply flex mr-8 items-center justify-between;
+
+  @media (max-width: 770px) {
+    display: none;
+    background: linear-gradient(90deg, rgba(246, 169, 204, 1) 0%, rgba(255, 202, 141, 1) 50%, rgba(252, 121, 142, 1) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 5rem;
+    height: 100vh;
+    min-width: 35vw;
+    z-index: 10;
+  }
+}
+
+.link {
+  @apply px-6 py-4 text-xl cursor-pointer font-['Poppins'] transition-all;
+
+  @media (max-width: 770px) {
+    display: block;
+  }
+}
+
+.link:hover, .dropdown:hover {
+  text-decoration: underline wavy;
+}
+
+.dropdown {
+  @apply px-6 py-4 text-xl cursor-pointer font-['Poppins'] transition-all;
+}
+
+.dropdownContent {
+  @apply hidden absolute py-3 bg-white my-4 rounded-2xl transition-all;
+  transition: 0.3s;
+}
+
+.dropdownContent a {
+  @apply block text-lg py-1 px-3 w-[13vw] hover:bg-gray-300;
+}
+
+.toggleButton {
+  @apply absolute top-0 left-0 hidden p-5 cursor-pointer;
+
+  @media (max-width: 770px) {
+    display: block;
+    z-index: 15;
+  }
+}
+
+.overlayActive {
+  @apply h-[100vh] w-[100vw] fixed top-0 left-0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.6);
+}
