@@ -12,12 +12,14 @@ export default function Navbar() {
       setIsMobile(true);
   }, []);
 
-  window.onresize = () => {
-    if(window.innerWidth <= 770)
-      setIsMobile(true);
-    else
-      setIsMobile(false);
-  };
+  if(typeof window !== undefined) {
+    window.onresize = () => {
+      if(window.innerWidth <= 770)
+        setIsMobile(true);
+      else
+        setIsMobile(false);
+    }
+  }
 
   return <div
     className={styles.navbar}

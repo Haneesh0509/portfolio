@@ -8,9 +8,6 @@ import Footer from "@/app/partials/Footer/Footer";
 export default function Home() {
   return (
     <div className="bg-[#e8e9eb]">
-      <Head>
-        <title>Home | Haneesh Pediredla</title>
-      </Head>
       <Navbar />
       <Header />
       <div className="header-divider">
