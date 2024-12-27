@@ -1,6 +1,5 @@
 import Header from "@/app/partials/Header/Header";
 import Navbar from "@/app/components/Navbar/Navbar";
-import Head from "next/head";
 import Skills from "@/app/partials/Skills/Skills";
 import About from "@/app/partials/About/About";
 import Footer from "@/app/partials/Footer/Footer";
